@@ -30,24 +30,25 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 #### Figure -02 FULL ADDER 
 
 ### Procedure
-
+```
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
+```
 ### 
 Program:
 /*
 ## HALF ADDER
-
+```
 module hh (a,b,s,c);
 input a,b;
 output s,c;
 xor(s,a,b);
 and(c,a,b);
 endmodule
-
+```
 ## FULL ADDER
-
+```
 module hh (a,b,bin,diff,bout);
 input a,b,bin;
 output diff,bout;
@@ -64,7 +65,7 @@ endmodule
 Developed by: G.PAVANA
 RegisterNumber: 212222230105 
 */
-
+````
 ### Output:
 ### RTL
 ## HALF ADDER
