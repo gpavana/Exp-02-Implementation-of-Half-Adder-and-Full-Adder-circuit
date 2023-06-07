@@ -49,17 +49,15 @@ endmodule
 ```
 ## FULL ADDER
 ```
-module hh (a,b,bin,diff,bout);
-input a,b,bin;
-output diff,bout;
-wire p,q,r,s,t;
-xor(p,a,b);
-not(q,a);
-and(r,q,b);
-xor(diff,p,bin);
-not(s,p);
-and(t,s,bin);
-or(bout,t,r);
+module hh (a,b,ci,s,co);
+input a,b,ci;
+output s,co;
+wire d,e,f;
+xor(d,a,b);
+xor(s,d,ci);
+and(e,ci,d);
+and(f,a,b);
+or(co,e,f);
 endmodule
 
 Developed by: G.PAVANA
@@ -68,7 +66,7 @@ RegisterNumber: 212222230105
 ````
 ### Output:
 ### RTL
-## HALF ADDER
+### HALF ADDER
 ![Implementation-of-Half-Adder-and-Full-Adder-circuit](ha.png)
 ## FULL ADDER
 ![Implementation-of-Half-Adder-and-Full-Adder-circuit](fa.png)
